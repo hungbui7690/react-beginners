@@ -1,10 +1,10 @@
 /*
-  Create ListGroup Component
-  - install Bootstrap
-    > npm install bootstrap@5.2.3
-  - import 
+  Fragment
 
-  - create ListGroup.tsx
+///////////////////////////
+
+  Render List
+  - warning > unique key
 
 */
 
