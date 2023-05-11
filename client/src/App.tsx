@@ -1,15 +1,19 @@
 /*
-  Create React Component
-  - create Message.tsx
+  Create ListGroup Component
+  - install Bootstrap
+    > npm install bootstrap@5.2.3
+  - import 
+
+  - create ListGroup.tsx
 
 */
 
-import Message from './Message'
+import ListGroup from './components/ListGroup'
 
 function App() {
   return (
     <div>
-      <Message />
+      <ListGroup />
     </div>
   )
 }
