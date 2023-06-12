@@ -1,10 +1,14 @@
-import { Fragment } from 'react'
+// *** TS
+import { MouseEvent } from 'react'
 
 function ListGroup() {
   let items = ['New York', 'San Francisco', 'Tokyo', 'London', 'Paris']
 
+  // ***
+  const handleEvent = (e: MouseEvent) => console.log(e)
+
   return (
-    <Fragment>
+    <>
       <h1>List</h1>
       {items.length === 0 && <p>No Item Found</p>}
       <ul className='list-group'>
@@ -12,13 +16,13 @@ function ListGroup() {
           <li
             className='list-group-item'
             key={item}
-            onClick={(e) => console.log({ e })} // *** event object
+            onClick={handleEvent} // *** hover on event object here (from last lesson) to see the type
           >
             {item}
           </li>
         ))}
       </ul>
-    </Fragment>
+    </>
   )
 }
 

@@ -1,6 +1,5 @@
 /*
-  Handling Events P2
-  - e: SyntheticBaseEvent: each browser has its own implementation > this is the wrapper around the event object 
+  Handling Events P3
 
 
 */
