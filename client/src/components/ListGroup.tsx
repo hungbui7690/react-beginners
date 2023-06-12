@@ -4,15 +4,17 @@ function ListGroup() {
   let items = ['New York', 'San Francisco', 'Tokyo', 'London', 'Paris']
   items = []
 
-  // ***
-  const message = items.length === 0 ? <p>No Item Found</p> : null
+  // *** we can also use function > benefit: we can have parameter
+  const getMessage = () => {
+    return items.length === 0 ? <p>No Item Found</p> : null
+  }
 
   return (
     <Fragment>
       <h1>List</h1>
 
       {/* *** */}
-      {message}
+      {getMessage()}
 
       <ul className='list-group'>
         {items.map((item) => (
