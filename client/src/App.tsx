@@ -1,10 +1,6 @@
 /*
-  Fragment
-
-///////////////////////////
-
-  Render List
-  - warning > unique key
+  Conditional Rendering P1
+  
 
 */
 
