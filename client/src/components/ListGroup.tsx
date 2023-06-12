@@ -1,22 +1,19 @@
 import { Fragment } from 'react'
 
 function ListGroup() {
-  // ***
   let items = ['New York', 'San Francisco', 'Tokyo', 'London', 'Paris']
   items = []
 
   // ***
-  if (items.length === 0)
-    return (
-      <>
-        <h1>List</h1>
-        <p>No Item Found</p>
-      </>
-    )
+  const message = items.length === 0 ? <p>No Item Found</p> : null
 
-  // *** we can't use if/else statement down here >> if we want, we need to use ternary operator
   return (
     <Fragment>
+      <h1>List</h1>
+
+      {/* *** */}
+      {message}
+
       <ul className='list-group'>
         {items.map((item) => (
           <li className='list-group-item' key={item}>
